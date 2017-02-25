@@ -1,3 +1,15 @@
 ##first code:
 
 ##should include bringing in csv files from database
+##this is what I used to load and view the header for the WPBR query on my computer. Do I need to upload the .csv files to GitHub?
+##what I'm calling WPBR has fields mostly from the tree details table and a few from the tree location table.
+##I included all the fields relevant to WPBR analysis (original and present day methods). We will probably need to add the comments too.
+> setwd("~/Documents/WPBR")
+> wpbr=read.csv("tbl_Tree_Detail_WPBRQuery.csv")
+> head(wpbr)
+
+##Beetles Data only
+> beetles <- read.csv("Beetles_test.csv")
+> head (beetles)
+
+##once I determine this is working, I can made another .csv like wpbr, but with comments, beetles, and fire
